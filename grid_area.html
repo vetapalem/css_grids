@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic-grids</title>
+    <style>
+            /* grid-template-columns: repeat(6,20px);  function */
+        .item9{
+            grid-area: myarea;  /* myarea is refernce */
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: auto auto  auto auto; */
+            grid:"myarea myarea . ." /* myarea is apping `.` is leave */
+            "myarea myarea  . . "
+            "myarea myarea . ."
+            "myarea myarea . ."
+            ;
+            column-gap: 10px;
+            row-gap: 10px;
+            background-color: darkcyan;
+            border: 2px solid yellowgreen;
+            padding: 10px;
+        }
+        .container>div{
+            background-color: aliceblue;
+            text-align: center;
+            border: 1px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!--        h2*45.item${$} -->
+
+
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        
+
+
+    </div>
+  
+</body>
+</html>
