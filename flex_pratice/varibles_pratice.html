@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --sizes : 1fr ;
+            --boxwidth :20px;
+            --boxheight :20px;
+
+            --image :url(../back.jpg);
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* height: 500px; */
+            border: 2px solid linear-gradient(blue , red, yellow);
+
+        }
+        .container > div{
+            width: var(--boxwidth);
+            height: var(--boxheight);
+            border: 1px double var(--border,rgb(215, 1, 1));
+        }
+        /* body{ */
+            /* background-image: var(--image); */
+            /* background-image:var(--image); */
+            /* background-image: linear-gradient(blue , red, yellow); */
+        /* } */
+
+    </style>
+</head>
+<body onload="link()" >
+    <h1 >uiii</h1>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        
+
+
+
+    </div>
+    <script>
+        function link(){
+        var di  = document.getElementsByTagName('h1');
+        console.log(di[0].innerText)
+        di[0].innerHTML = getComputedStyle(document.querySelector('.container')).getPropertyValue('border')
+        }
+        </script>
+</body>
+</html>

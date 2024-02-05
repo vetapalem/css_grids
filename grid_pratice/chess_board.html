@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic-grids</title>
+    <style>
+
+        .container{
+            /* width: fit-content; */
+            display: grid;
+            grid-template-columns: repeat(8, 100px);
+            grid-template-rows: repeat(8,100px);
+            /* column-gap: 10px;
+            row-gap: 10px;  */
+            background-color: darkcyan;
+            border: 2px solid yellowgreen;
+            padding: 10px;
+        }
+        .container>*{
+            /* width:100px ; */
+            /* height: 100px; */
+            background-color: aliceblue;
+            text-align: center;
+            border: 1px solid black;
+
+        }
+        .black{
+            background-color: black;
+        }
+        /* body{
+            background: url('./back.jpg');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           height: 100vh;
+
+        } */
+       
+    </style>
+</head>
+<body onload="sizes()">
+    <h5></h5>
+    <h5> </h5>
+
+
+    <div class="container">
+
+
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        
+
+        
+
+
+
+
+
+           
+           
+          
+    </div>
+       
+       
+
+
+
+    <script>
+        
+
+
+        function sizes(){
+            const obj = document.getElementsByTagName('h5')
+            obj[0].innerHTML = `height  = ${window.innerHeight} `;
+            obj[1].innerHTML = `width  = ${window.innerWidth} `;
+
+            console.log(window.innerWidth)
+
+        }
+        setInterval(sizes,100000)
+
+    </script>
+  
+</body>
+</html>

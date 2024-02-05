@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./back.jpg">
+    <title>Document</title>
+    <style>
+        /* varibles */
+        :root{
+            --sizes:var(--box-size);
+            --box-size:150px;
+
+            --gradient :linear-gradient(to bottom right,red,yellow,green,black,blue);
+            
+        }
+
+
+        /* media query helpfull data  */
+        .container{
+            --box-size:var(var(--sizes))
+        }
+
+
+        /* style  */
+      
+
+        .container{
+           
+           width: fit-content;
+            display: grid;
+
+           grid-template: repeat(8,var(--sizes)) / repeat(8,var(--sizes));
+
+            gap: 10px;
+
+            background-image:var(--gradient);
+        
+           
+
+
+
+        }
+        .container>*{
+            width: var(--box-size);
+            height: var(--box-size);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .black{
+            background-color: rgba(0, 0, 0, 0.388);
+            color: aliceblue;
+            transform: rotate(45deg);
+            
+        
+        }
+
+        .white{
+            background-color: rgba(171, 181, 190, 0.592);
+        }
+
+
+        @media screen and (min-width: 480px) {
+           
+            .container{
+                --box-size:100px
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">1</div>
+
+
+    </div>
+    
+</body>
+</html>

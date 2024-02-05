@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic-grids</title>
+    <style>
+
+        .container{
+            
+            display: grid;
+            grid-template-columns: auto 400px minmax(200px , 500px);
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-auto-rows: 50px;
+           
+            background-color: darkcyan;
+            border: 2px solid yellowgreen;
+            padding: 10px;
+
+        }
+        .container>*{
+            
+            background-color: aliceblue;
+            text-align: center;
+            border: 1px solid black;
+
+        }
+        
+        
+       
+    </style>
+</head>
+<body onload="sizes()">
+    <h5></h5>
+    <h5> </h5>
+
+
+    <div class="container">
+        <div >width expands to fill </div>
+        <div>400px</div>
+        <div>min200px max 500px </div>
+        <div >width expands to fill </div>
+        <div>400px</div>
+        <div>min200px max 500px </div>
+        <div >width expands to fill </div>
+        <div>400px</div>
+        <div>min200px max 500px </div>
+        <div> 500px heigh</div>
+
+           
+          
+    </div>
+       
+       
+
+
+
+    <script>
+        
+
+
+        function sizes(){
+            const obj = document.getElementsByTagName('h5')
+            obj[0].innerHTML = `height  = ${window.innerHeight} `;
+            obj[1].innerHTML = `width  = ${window.innerWidth} `;
+
+            console.log(window.innerWidth)
+
+        }
+        // setInterval(sizes,100000)
+
+    </script>
+  
+</body>
+</html>

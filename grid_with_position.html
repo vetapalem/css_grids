@@ -5,62 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic-grids</title>
     <style>
-            /* grid-template-columns: repeat(6,20px);  function */
-        
-         /*.item9{
-            /* myarea is refernce */
-            /* grid-area: myarea;   */
-       /* } */
-        
-        
-        /* .item5{ */
-            /* grid-area: home; */
-            /* border-radius: 20%; */
-            /* transform: rotate(170deg); */
-        /* } */
-    
 
         .container{
+            /* width: fit-content; */
             display: grid;
-            grid-template-columns: 128.8px 2fr 1fr 1fr 1fr;
-            grid-template-rows: 2fr 6fr ;
-            
-             /* myarea is apping `.` is leave */
-           /* grid:
-            ". . . "
-            "myarea .  home "
-            "myarea . home "
-            ;*/
-            column-gap: 10px;
-            row-gap: 10px;
+            grid-template-columns: repeat(2, 1fr );
+            /* column-gap: 10px;
+            row-gap: 10px; */
             background-color: darkcyan;
             border: 2px solid yellowgreen;
             padding: 10px;
         }
-
-
-
-        .container>div{
+        .container>*{
             background-color: aliceblue;
             text-align: center;
             border: 1px solid black;
-            /* border-radius: 50%; */
 
         }
+        body{
+            background: url('./back.jpg');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           height: 100vh;
 
+        }
+       
     </style>
 </head>
 <body onload="sizes()">
-
-
-    <h5 class="screen"></h5>
-    <h5 class="screen"></h5>
+    <h5></h5>
+    <h5> </h5>
 
 
     <div class="container">
-        <!--        h2*45.item${$} -->
-
-
+            
         <div class="item1">1</div>
         <div class="item2">2</div>
         <div class="item3">3</div>
@@ -69,14 +48,22 @@
         <div class="item6">6</div>
         <div class="item7">7</div>
         <div class="item8">8</div>
-        <div class="item9">9</div>
-        <div class="item10">10</div>
+
+
+           
+           
+          
+    </div>
+       
+       
+
+
+
+    <script>
         
 
 
-    </div>
-    <script>
-         function sizes(){
+        function sizes(){
             const obj = document.getElementsByTagName('h5')
             obj[0].innerHTML = `height  = ${window.innerHeight} `;
             obj[1].innerHTML = `width  = ${window.innerWidth} `;
